@@ -36,7 +36,7 @@ import ObjectiveC
  The `showToast` methods display any view as toast.
  
  */
-public extension UIView {
+@objc public extension UIView {
     
     /**
      Keys used for associated objects.
@@ -542,7 +542,7 @@ public extension UIView {
  sense to create your own custom UIView subclass and present it with the `showToast`
  methods.
 */
-public struct ToastStyle {
+@objc public struct ToastStyle {
 
     public init() {}
     
@@ -696,7 +696,7 @@ public struct ToastStyle {
  `ToastManager` provides general configuration options for all toast
  notifications. Backed by a singleton instance.
 */
-public class ToastManager {
+@objc public class ToastManager {
     
     /**
      The `ToastManager` singleton instance.
@@ -747,7 +747,7 @@ public class ToastManager {
 
 // MARK: - ToastPosition
 
-public enum ToastPosition {
+@objc public enum ToastPosition {
     case top
     case center
     case bottom
