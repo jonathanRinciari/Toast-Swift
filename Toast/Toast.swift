@@ -542,7 +542,7 @@ import ObjectiveC
  sense to create your own custom UIView subclass and present it with the `showToast`
  methods.
 */
-@objc public struct ToastStyle {
+public struct ToastStyle {
 
     public init() {}
     
@@ -696,7 +696,7 @@ import ObjectiveC
  `ToastManager` provides general configuration options for all toast
  notifications. Backed by a singleton instance.
 */
-@objc public class ToastManager {
+public class ToastManager {
     
     /**
      The `ToastManager` singleton instance.
@@ -747,7 +747,7 @@ import ObjectiveC
 
 // MARK: - ToastPosition
 
-@objc public enum ToastPosition {
+public enum ToastPosition {
     case top
     case center
     case bottom
