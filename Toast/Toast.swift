@@ -381,13 +381,11 @@ import ObjectiveC
     
     // MARK: - Events
     
-    @objc
     private func handleToastTapped(_ recognizer: UITapGestureRecognizer) {
         guard let toast = recognizer.view else { return }
         hideToast(toast, fromTap: true)
     }
     
-    @objc
     private func toastTimerDidFinish(_ timer: Timer) {
         guard let toast = timer.userInfo as? UIView else { return }
         hideToast(toast)
